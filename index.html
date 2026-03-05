@@ -21,16 +21,14 @@
         <button class="reveal-btn" onclick="revealCard()">Reveal Invitation ✨</button>
 
         <div class="invite-wrapper hidden">
-
             <img src="assets/invitation.jpg" class="invite-image" />
 
-            <!-- Location Button over image -->
-            
-        </div>  
-        <div class="hidden" id="viewLocation"><a 
-                href="https://maps.app.goo.gl/HxpERtmKNxCPWd9n8"
-                target="_blank"
-                class="map-link">📍 View Location</a></div>
+            <a href="https://maps.app.goo.gl/HxpERtmKNxCPWd9n8"
+            target="_blank"
+            class="location-btn">
+            📍 Get Directions
+            </a>
+        </div>
         
     </div>
   </div>
@@ -131,8 +129,8 @@
 
         const wrapper = document.querySelector(".invite-wrapper");
         const btn = document.querySelector(".reveal-btn");
-        const viewLocation = document.getElementById("viewLocation");
-        viewLocation.classList.remove("hidden");
+        // const viewLocation = document.getElementById("viewLocation");
+        // viewLocation.classList.remove("hidden");
 
         wrapper.classList.remove("hidden");
 
