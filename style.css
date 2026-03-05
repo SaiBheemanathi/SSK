@@ -21,13 +21,6 @@ body {
   width: 92%;
   max-width: 420px;
   padding: 22px 18px 30px;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(14px);
-  border-radius: 26px;
-  box-shadow:
-    0 15px 40px rgba(255, 160, 120, 0.35),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-  z-index: 2;
 }
 
 /* ===== Music Button ===== */
@@ -277,4 +270,52 @@ body {
   0% { opacity: 0.75; }
   50% { opacity: 1; }
   100% { opacity: 0.75; }
+}
+
+.invite-wrapper{
+  position:relative;
+  max-width:420px;
+  margin:25px auto;
+}
+
+.invite-image{
+  width:100%;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.location-btn{
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#ffffffdd;
+  padding:10px 18px;
+  border-radius:25px;
+  font-weight:600;
+  text-decoration:none;
+  color:#333;
+  box-shadow:0 6px 20px rgba(0,0,0,0.25);
+}
+
+.location-btn:hover{
+  background:#fff;
+}
+
+.hidden{
+  display:none;
+}
+
+.map-link{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  background: #ffffffdd;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
